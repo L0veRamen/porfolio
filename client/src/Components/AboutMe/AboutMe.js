@@ -14,15 +14,17 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+      "3rd Year Computer Science Undergraduate Student Seeking for Internship Opportunity in 2023 Winter/Summer",
     highlights: {
       bullets: [
-        "Full Stack web and mobile development",
-        "Interactive Front End as per the design",
-        "React and React Native",
-        "Redux for State Mnanagement",
-        "Building REST API",
-        "Managing database",
+        "Interested In Web Development",
+        "Interactive Front End",
+        "React",
+        "JavaScript, HTML, CSS",
+        "Java",
+        "SQL",
+        "Python"
+        
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -39,7 +41,7 @@ export default function AboutMe(props) {
 
   return (
     <div
-      className="about-me-container screen-container"
+      className="about-me-container screen-container fade-in"
       id={props.id || ""}
     >
       <div className="about-me-parent">

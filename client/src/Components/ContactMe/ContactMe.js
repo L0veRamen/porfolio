@@ -35,35 +35,7 @@ export default function ContactMe(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  //   console.log(name);
-
-  // const submitForm = (e) => {
-  //   e.preventDefault(e);
-  //   try {
-  //     let data = {
-  //       name,
-  //       email,
-  //       message,
-  //     };
-  //     setBool(true);
-  //     const res = axios.post("/contact", data);
-  //     if (name.length === 0 || email.length === 0 || message.length === 0) {
-  //       setBanner(res.data.msg);
-  //       toast.error(res.data.msg);
-  //       setBool(false);
-  //     } else if (res.status === 200) {
-  //       setBanner(res.data.msg);
-  //       toast.success(res.data.msg);
-  //       setBool(false);
-
-  //       setName("");
-  //       setEmail("");
-  //       setMessage("");
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+ 
 
   const submitForm = async (e) => {
     e.preventDefault();
@@ -94,7 +66,7 @@ export default function ContactMe(props) {
   };
 
   return (
-    <div className="main-container " id={props.id || ""}>
+    <div className="main-container fade-in" id={props.id || ""}>
       <ScreenHeading subHeading={"Let's Keep In Touch"} title={"Contact Me"} />
       <div className="central-form">
         <div className="col">

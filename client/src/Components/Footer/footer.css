@@ -15,17 +15,17 @@
   }
 }
 .btn-scroll {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: aliceblue;
   font-size: 24px;
-  background-color: tomato;
-  border-radius: 10px;
+  background-color: #86C6F4;
+  border-radius: 25px;
   border: none;
 }
 .btn-scroll i:hover {
   transform: rotate(360deg);
-  color: aliceblue;
+  color: rgb(56, 36, 148);
 }
 
 .btn-scroll i {
