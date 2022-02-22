@@ -80,7 +80,7 @@ const Resume =(props) =>{
       title: "One Mall Shopping Web App ",
       duration: { fromDate: "2020 Jan", toDate: "2020 Apr" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Online shopping website for showcasing and selling products",
       subHeading:
         "Technologies Used: JavaScript, HTML, CSS",
     },

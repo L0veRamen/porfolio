@@ -1,10 +1,6 @@
 {
-    "folders": [
-        {
-            "path": "."
-        },
-        {
-            "path": "..\\ReactBeginner"
-        }
-    ]
+    "folders": [],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "ReactBeginner"
+    }
 }
