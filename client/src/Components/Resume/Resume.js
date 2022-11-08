@@ -66,11 +66,11 @@ const Resume =(props) =>{
       duration: { fromDate: "2021 Dec", toDate: "2022 Feb" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      subHeading: "Technologies Used: React JS, Bootsrap"
     },
     {
-      title: "Covid 19 Vaccine Registration System App ",
-      duration: { fromDate: "2021 Sept", toDate: "2021 Dec" },
+      title: "Covid-19 Vaccine Registration System ",
+      duration: { fromDate: "2021 Sep", toDate: "2021 Dec" },
       description:
         "A group project of registration covid 19 vaccine database application",
       subHeading:
@@ -92,7 +92,7 @@ const Resume =(props) =>{
         heading={"Concordia University, Montreal, Canada"}
         subHeading={"BACHELOR OF COMPUTER SCIENCE GENERAL PROGRAM COOP"}
         fromDate={"2019"}
-        toDate={"2023"}
+        toDate={"2024"}
       />
 
     </div>,
@@ -102,29 +102,34 @@ const Resume =(props) =>{
       <div className="experience-container">
         <ResumeHeading
           heading={"Big Bang ERP"}
-          subHeading={"CONSULTANT DEVELOPER INTERN"}
+          subHeading={"CONSULTANT INTERN"}
           fromDate={"2022 Jan"}
           toDate={"2022 April"}
         />
         <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as Consultant Developer.
-          </span>
+          {/* <span className="resume-description-text">
+           Working as Consultant
+          </span> */}
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+          • Worked on program maintenance as well as implementation of the automation of NetSuite in a team, such as adding CSS features, Suite Scripts and Server Scripts {" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+          • Involved in testing and debugging implemented product functionality (JavaScript/CSS/HTML) {" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+          • Managed to write a script to receive all the JSON data generated from clients' deposit or direct payment, and use JavaScript to automate - automatically generating the data of the corresponding database in the NetSuite system{" "}
+          </span>
+          <br />
+          <span className="resume-description-text">
+          • Participated in an agile process with senior consultant and project managers, including writing design doc, developing, and testing of web apps {" "}
+          </span>
+          <br />
+          <span className="resume-description-text">
+          • Managed to increased availability and scalability by 20% and 30% respectively by implementing more effective troubleshooting mechanism to solve technical issues for NetSuite's clients {" "}
           </span>
           <br />
         </div>
@@ -160,6 +165,7 @@ const Resume =(props) =>{
           description={projectsDetails.description}
           fromDate={projectsDetails.duration.fromDate}
           toDate={projectsDetails.duration.toDate}
+          address={projectsDetails.address}
         />
       ))}
     </div>,
