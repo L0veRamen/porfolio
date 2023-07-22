@@ -57,7 +57,7 @@ export default function Profile() {
               >
                 Hire me
               </button>
-              <a href="" download="qc.pdf">
+              <a href="/client/src/assets/Resume/Chen_Qian_Resume_v1.pdf" download="Resume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
