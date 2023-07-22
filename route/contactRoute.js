@@ -26,7 +26,7 @@ router.post("/contact", (req, res) => {
     subject: `message from ${data.name}`,
     html: `
 
-            <h3>Informations<h3/>
+            <h3>Information<h3/>
             <ul>
             <li>Name: ${data.name}<li/>
             <li>Email: ${data.email}<li/>
