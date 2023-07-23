@@ -3,6 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./aboutMe.css";
+import ResumePDF from "../../Chen_Qian_Resume_v1.pdf"
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -66,7 +67,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="/client/src/assets/Resume/Chen_Qian_Resume_v1.pdf" download="Resume.pdf">
+              <a href= {ResumePDF} download="Resume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
