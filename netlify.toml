@@ -1,3 +1,8 @@
+[build]
+base = "/client"
+publish = "/build"
+command = "cd client && npm install --force && npm run build"
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
