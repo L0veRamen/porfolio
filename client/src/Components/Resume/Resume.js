@@ -52,12 +52,12 @@ const Resume =(props) =>{
 
   const programmingSkillsDetails = [
     { skill: "JavaScript", ratingPercentage: 75 },
-    { skill: "React JS", ratingPercentage: 65 },
-    { skill: "Python", ratingPercentage: 65 },
-    { skill: "SQL", ratingPercentage: 70 },
-    { skill: "Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "React JS", ratingPercentage: 85 },
+    { skill: "Python", ratingPercentage: 90 },
+    { skill: "SQL", ratingPercentage: 65 },
+    { skill: "Java", ratingPercentage: 85 },
+    { skill: "HTML", ratingPercentage: 75 },
+    { skill: "CSS", ratingPercentage: 75 },
   ];
 
   const projectsDetails = [
@@ -66,7 +66,7 @@ const Resume =(props) =>{
       duration: { fromDate: "2021 Dec", toDate: "2022 Feb" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap"
+      subHeading: "Technologies Used: React JS, Bootstrap"
     },
     {
       title: "Covid-19 Vaccine Registration System ",
@@ -101,37 +101,31 @@ const Resume =(props) =>{
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Big Bang ERP"}
-          subHeading={"CONSULTANT INTERN"}
-          fromDate={"2022 Jan"}
-          toDate={"2022 April"}
+          heading={"Bell Canada"}
+          subHeading={"SOFTWARE DEVELOPER INTERN"}
+          fromDate={"2023 May"}
+          toDate={"2023 August"}
         />
         <div className="experience-description">
-          {/* <span className="resume-description-text">
-           Working as Consultant
-          </span> */}
-        </div>
-        <div className="experience-description">
           <span className="resume-description-text">
-          • Worked on program maintenance as well as implementation of the automation of NetSuite in a team, such as adding CSS features, Suite Scripts and Server Scripts {" "}
+          • Developed and maintained web applications supporting <strong>4 to 5 million</strong> transactions daily by implementing{" "}
+            <strong>RESTful</strong> APIs in Python and leveraging <strong>Kubernetes</strong> and <strong>Docker</strong> to deploy the app on <strong>OpenShift</strong>. {" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Involved in testing and debugging implemented product functionality (JavaScript/CSS/HTML) {" "}
+          • Built a web-based tool using <strong>Django</strong> for technicians to extract logs from server systems, simplifying the
+            troubleshooting process and improving work efficiency. {" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Managed to write a script to receive all the JSON data generated from clients' deposit or direct payment, and use JavaScript to automate - automatically generating the data of the corresponding database in the NetSuite system{" "}
+          • Designed and executed comprehensive end-to-end tests and maintained the <strong>CI/CD</strong> pipeline to verify the
+          application's functionality, performance, and scalability. {" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Participated in an agile process with senior consultant and project managers, including writing design doc, developing, and testing of web apps {" "}
+          • Collaborated with cross-functional teams to design and implement <strong>cloud-based microservices</strong> for carrier routing,
+            verification, and block-listing, ensuring seamless integration with existing systems. {" "}
           </span>
-          <br />
-          <span className="resume-description-text">
-          • Managed to increased availability and scalability by 20% and 30% respectively by implementing more effective troubleshooting mechanism to solve technical issues for NetSuite's clients {" "}
-          </span>
-          <br />
         </div>
       </div>
     </div>,

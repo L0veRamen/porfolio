@@ -2,6 +2,7 @@ import "./profile.css";
 import Typical from 'react-typical';
 import React from "react";
 import ScrollService from "../../../utilities/ScrollService";
+import ResumePDF from "../../../Chen_Qian_Resume_v1.pdf" 
 
 
 export default function Profile() {
@@ -14,7 +15,7 @@ export default function Profile() {
                 <a href="#">
                   <i className="fa fa-facebook-square"></i>
                 </a>
-                <a href="">
+                <a href="#">
                   <i className="fa fa-github"></i>
                 </a>
                 <a href="#">
@@ -57,7 +58,7 @@ export default function Profile() {
               >
                 Hire me
               </button>
-              <a href="" download="qc.pdf">
+              <a href={ResumePDF} download="Resume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

@@ -3,6 +3,7 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./aboutMe.css";
+import ResumePDF from "../../Chen_Qian_Resume_v1.pdf";
 
 export default function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -14,17 +15,17 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "3rd Year Computer Science Undergraduate Student Seeking for Internship Opportunity in 2023 Winter/Summer",
+      "Computer Science Undergraduate Student Seeking for Full-Time Opportunity in 2024",
     highlights: {
       bullets: [
-        "Interested In Web Development",
-        "Interactive Front End",
-        "React",
+        "Interested In Front/Back/Full-Stack Development",
+        "React, Vue",
         "JavaScript, HTML, CSS",
         "Java",
+        "Spring Boot",
+        "Django",
         "SQL",
-        "Python"
-        
+        "Python",
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -66,7 +67,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="qc.pdf" download="qc.pdf">
+              <a href={ResumePDF} download="Resume.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
@@ -75,6 +76,4 @@ export default function AboutMe(props) {
       </div>
     </div>
   );
-
- 
 }

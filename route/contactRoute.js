@@ -12,11 +12,13 @@ router.post("/contact", (req, res) => {
   }
 
   let smtpTransporter = nodemailer.createTransport({
-    service: "Gmail",
+    pool: true,
+    host: 'smtp.gmail.com',
     port: 465,
+    secure: true,
     auth: {
       user: "jasonqc9103@gmail.com",
-      pass: "Jason87899069",
+      pass: "cdhwtskdcfasszhi",
     },
   });
 
@@ -26,7 +28,7 @@ router.post("/contact", (req, res) => {
     subject: `message from ${data.name}`,
     html: `
 
-            <h3>Informations<h3/>
+            <h3>Information<h3/>
             <ul>
             <li>Name: ${data.name}<li/>
             <li>Email: ${data.email}<li/>
@@ -35,7 +37,13 @@ router.post("/contact", (req, res) => {
             <p>${data.message}<p/>
             `,
   };
-
+  smtpTransporter.verify(function (error, success) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Server is ready to take our messages");
+    }
+  });
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
