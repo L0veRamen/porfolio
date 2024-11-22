@@ -58,6 +58,11 @@ const Resume =(props) =>{
     { skill: "Java", ratingPercentage: 85 },
     { skill: "HTML", ratingPercentage: 75 },
     { skill: "CSS", ratingPercentage: 75 },
+    { skill: "Django", ratingPercentage: 80 },
+    { skill: "Spring Boot", ratingPercentage: 80 },
+    { skill: "Golang", ratingPercentage: 70 },
+    { skill: "Terraform", ratingPercentage: 70 },
+    { skill: "AWS/GCP", ratingPercentage: 70 },
   ];
 
   const projectsDetails = [
@@ -94,7 +99,6 @@ const Resume =(props) =>{
         fromDate={"2019"}
         toDate={"2024"}
       />
-
     </div>,
 
     /* WORK EXPERIENCE */
@@ -103,29 +107,61 @@ const Resume =(props) =>{
         <ResumeHeading
           heading={"Bell Canada"}
           subHeading={"SOFTWARE DEVELOPER INTERN"}
-          fromDate={"2023 May"}
-          toDate={"2023 August"}
+          fromDate={"2024 July"}
+          toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-          • Developed and maintained web applications supporting <strong>4 to 5 million</strong> transactions daily by implementing{" "}
-            <strong>RESTful</strong> APIs in Python and leveraging <strong>Kubernetes</strong> and <strong>Docker</strong> to deploy the app on <strong>OpenShift</strong>. {" "}
+            • Developed reusable <strong>Terraform modules</strong> for
+            standardized cloud infrastructure deployment, including{" "}
+            <strong>VPCs</strong>, <strong>subnets</strong> and{" "}
+            <strong>Security Groups</strong>. ensuring consistency across
+            environments, reducing setup time by <strong>60%</strong>{" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Built a web-based tool using <strong>Django</strong> for technicians to extract logs from server systems, simplifying the
-            troubleshooting process and improving work efficiency. {" "}
+            • Administered centralized Platform Landing Zones in{" "}
+            <strong>AWS</strong> and <strong>GCP</strong>, integrating shared
+            services like <strong>IAM</strong>, networking connectivity, and{" "}
+            management. achieving a 25% gain in operational efficiency and a{" "}
+            <strong>30%</strong>
+            {""}
+            reduction in resource duplication.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Designed and executed comprehensive end-to-end tests and maintained the <strong>CI/CD</strong> pipeline to verify the
-          application's functionality, performance, and scalability. {" "}
+            • Engineered hybrid-cloud-compatible landing zones using{" "}
+            <strong>Terraform</strong>
+            {""}
+            to integrate on-premises and cloud resources, increasing workload
+            {""}
+            portability by <strong>30%</strong> and improving adaptability for
+            diverse deployments.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-          • Collaborated with cross-functional teams to design and implement <strong>cloud-based microservices</strong> for carrier routing,
-            verification, and block-listing, ensuring seamless integration with existing systems. {" "}
+            • Automated provisioning workflows with Terraform and GitLab{" "}
+            <strong>CI/CD</strong>, reducing manual intervention by{" "}
+            <strong>40%</strong>, cutting configuration errors by{" "}
+            <strong>40%</strong>, and improving provisioning speed by{" "}
+            <strong>50%</strong>.{" "}
           </span>
+          <br />
+          <span className="resume-description-text">
+            • Developed and maintained web applications supporting{" "}
+            <strong>4 to 5 million</strong> transactions daily by implementing{" "}
+            <strong>RESTful</strong> APIs in Python and leveraging{" "}
+            <strong>Kubernetes</strong> and <strong>Docker</strong> to deploy
+            the app on <strong>OpenShift</strong>.{" "}
+          </span>
+          <br />
+          <span className="resume-description-text">
+            • Designed and executed comprehensive end-to-end tests and
+            maintained the <strong>CI/CD</strong> pipeline to verify the
+            application's functionality, performance, and scalability.{" "}
+          </span>
+          <br />
+          
         </div>
       </div>
     </div>,
@@ -166,10 +202,7 @@ const Resume =(props) =>{
 
     /* Interests */
     <div className="resume-screen-container" key="interests">
-      <ResumeHeading
-        heading="Reading"
-        description="Reading Books"
-      />
+      <ResumeHeading heading="Reading" description="Reading Books" />
       <ResumeHeading
         heading="Baking"
         description="Baking crepe cake and cookies"

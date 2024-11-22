@@ -15,10 +15,9 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Computer Science Undergraduate Student Seeking for Full-Time Opportunity in 2024",
+      "Computer Science Undergraduate Student Seeking for Full-Time Opportunity in 2024/2025",
     highlights: {
       bullets: [
-        "Interested In Front/Back/Full-Stack Development",
         "React, Vue",
         "JavaScript, HTML, CSS",
         "Java",
@@ -26,6 +25,9 @@ export default function AboutMe(props) {
         "Django",
         "SQL",
         "Python",
+        "Golang",
+        "Terraform",
+        "AWS/GCP"
       ],
       heading: "Here are a Few Highlights:",
     },
